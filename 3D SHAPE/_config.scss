@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* ---- Color ----- */
+:root{
+    --primary-color :  #8467F5;
+    --Secondary-color : #FDDEDE ;
+    --third-color : white ;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.background{
+    background-color: var(--Secondary-color) ;
+    background-image: url(/bg/strips.svg);
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+li{
+    list-style: none;
+}
+hr{
+    height: 2px;
+    background-color: var(--primary-color);
+}
+li:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background: #8467F5;
+    transition: 1s ease-in;
+}
+a{
+    text-decoration: none;
+    font-weight: 700 ;
+    font-size: 1.5rem;
+}
+
+.Menu-Hamber1{
+    background-image: url(/icone/menu.svg);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    transform: all 0.5s ;
+}
+.hamber{
+    background-image: url(/icone/close-button.svg);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s ease-in-out;
+}
+.toggel{
+    transition: 0.5s ;
+    transform: translateX(0);
+
+}
+
+
+ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: column;
+    background: #F8C8C8;
+    transform: translateX(-100%);
+    
+}

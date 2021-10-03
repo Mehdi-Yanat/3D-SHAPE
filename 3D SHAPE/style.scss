@@ -1,0 +1,189 @@
+@import "config";
+
+
+
+.container{
+    z-index: 100;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .Text{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        h1{
+            font-family: 'Quicksand', sans-serif;
+            font-size: 2rem;
+            color: var(--third-color);
+            font-weight: 700;
+        }
+        p{
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            font-weight: 200;
+        }
+        input{
+            border: none;
+            width: 200px;
+            height: 30px;
+            border-radius: 10px ;
+            text-align: center;
+        }
+        .download-btn{
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 10px;
+            width: 200px;
+            height: 50px;
+            background-color: var(--primary-color);
+        }
+    }
+    .bg-img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/*-------- media Quary ---------------*/ 
+
+
+@media (min-width:992px) {
+    ul{
+        position: absolute;
+        top: 20%;
+        left: 100%;
+        width: 100%;
+        height: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        flex-direction: row;
+        background: none;
+        
+    }
+    .Menu-Hamber1{
+        display: none;
+    }
+
+    .container2{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .Text{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        h1{
+            font-family: 'Quicksand', sans-serif;
+            font-size: 3rem;
+            color: var(--third-color);
+            font-weight: 700;
+        }
+        p{
+            font-family: 'Quicksand', sans-serif;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            font-weight: 200;
+        }
+        input{
+            border: none;
+            width: 400px;
+            height: 50px;
+            border-radius: 10px ;
+            text-align: center;
+        }
+        .download-btn{
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 10px;
+            width: 200px;
+            height: 50px;
+            background-color: var(--primary-color);
+        }
+    }
+    .bg-img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .Text{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        h1{
+            font-family: 'Quicksand', sans-serif;
+            font-size: 5rem;
+            color: var(--third-color);
+            font-weight: 700;
+        }
+        p{
+            font-family: 'Quicksand', sans-serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            font-weight: 200;
+        }
+        input{
+            border: none;
+            width: 300px;
+            height: 40px;
+            border-radius: 10px ;
+            text-align: center;
+        }
+        .download-btn{
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 10px;
+            width: 300px;
+            height: 50px;
+            background-color: var(--primary-color);
+        }
+    }
+    .bg-img{
+        width: 100%;
+        height: 100%;
+    }
+}
+}
